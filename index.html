@@ -37,17 +37,43 @@
 		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
         <!-- Place favicon.ico in the root directory -->
 
+        <!-- Preload critical resources for faster loading -->
+        <link rel="preload" href="js/vendor/jquery-3.6.0.min.js" as="script">
+        <link rel="preload" href="js/main.js" as="script">
+        <link rel="preload" href="img/logo/logoprema.png" as="image">
+        <link rel="dns-prefetch" href="//fonts.googleapis.com">
+        <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+
         <!-- CSS here -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/animate.min.css">
-        <link rel="stylesheet" href="css/magnific-popup.css">
-        <link rel="stylesheet" href="css/fontawesome-all.min.css">
-        <link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
-        <link rel="stylesheet" href="css/jquery-ui.css">
-        <link rel="stylesheet" href="css/flaticon.css">
-        <link rel="stylesheet" href="css/odometer.css">
-        <link rel="stylesheet" href="css/slick.css">
-        <link rel="stylesheet" href="css/default.css">
+        <link rel="preload" href="css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="css/bootstrap.min.css"></noscript>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preload" href="css/fontawesome-all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="css/fontawesome-all.min.css"></noscript>
+        <link rel="preload" href="css/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <link rel="preload" href="css/magnific-popup.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <link rel="preload" href="css/bootstrap-datepicker.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <link rel="preload" href="css/jquery-ui.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <link rel="preload" href="css/flaticon.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <link rel="preload" href="css/odometer.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <link rel="preload" href="css/slick.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <link rel="preload" href="css/default.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript>
+            <link rel="stylesheet" href="css/animate.min.css">
+            <link rel="stylesheet" href="css/magnific-popup.css">
+            <link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
+            <link rel="stylesheet" href="css/jquery-ui.css">
+            <link rel="stylesheet" href="css/flaticon.css">
+            <link rel="stylesheet" href="css/odometer.css">
+            <link rel="stylesheet" href="css/slick.css">
+            <link rel="stylesheet" href="css/default.css">
+        </noscript>
+        
+        <!-- Inline script for CSS loading fallback -->
+        <script>
+        /*! loadCSS rel=preload polyfill. [c]2017 Filament Group, Inc. MIT License */
+        (function(w){"use strict";if(!w.loadCSS){w.loadCSS=function(){}}var rp=loadCSS.relpreload={};rp.support=(function(){var ret;try{ret=w.document.createElement("link").relList.supports("preload")}catch(e){ret=false}return function(){return ret}})();rp.bindMediaToggle=function(link){var finalMedia=link.media||"all";function enableStylesheet(){link.media=finalMedia}if(link.addEventListener){link.addEventListener("load",enableStylesheet)}else if(link.attachEvent){link.attachEvent("onload",enableStylesheet)}setTimeout(function(){link.rel="stylesheet";link.media="only x"});setTimeout(enableStylesheet,3000)};rp.poly=function(){if(rp.support()){return}var links=w.document.getElementsByTagName("link");for(var i=0;i<links.length;i++){var link=links[i];if(link.rel==="preload"&&link.getAttribute("as")==="style"&&!link.getAttribute("data-loadcss")){link.setAttribute("data-loadcss",true);rp.bindMediaToggle(link)}}};if(!rp.support()){rp.poly();var run=w.setInterval(rp.poly,500);if(w.addEventListener){w.addEventListener("load",function(){rp.poly();w.clearInterval(run)})}else if(w.attachEvent){w.attachEvent("onload",function(){w.clearInterval(run)})}}if(typeof exports!=="undefined"){exports.loadCSS=loadCSS}else{w.loadCSS=loadCSS}}(typeof global!=="undefined"?global:this));
+        </script>
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/responsive.css">
         
@@ -120,17 +146,6 @@
         </script>
     </head>
     <body>
-
-        <!-- preloader -->
-        <div id="preloader">
-            <div id="loading-center">
-                <div class="loader loader-two">
-                    <div class="loader-outter"></div>
-                    <div class="loader-inner"></div>
-                </div>
-            </div>
-        </div>
-        <!-- preloader-end -->
 
 		<!-- Scroll-top -->
         <button class="scroll-top scroll-to-target" data-target="html">
@@ -890,18 +905,18 @@
 
         <!-- JS here -->
         <script src="js/vendor/jquery-3.6.0.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/bootstrap-datepicker.min.js"></script>
-        <script src="js/isotope.pkgd.min.js"></script>
-        <script src="js/imagesloaded.pkgd.min.js"></script>
-        <script src="js/jquery.magnific-popup.min.js"></script>
-        <script src="js/jquery.odometer.min.js"></script>
-        <script src="js/jquery.easypiechart.min.js"></script>
-        <script src="js/jquery-ui.min.js"></script>
-        <script src="js/jquery.inview.min.js"></script>
-        <script src="js/jquery.appear.js"></script>
-        <script src="js/slick.min.js"></script>
-        <script src="js/wow.min.js"></script>
-        <script src="js/main.js"></script>
+        <script defer src="js/bootstrap.min.js"></script>
+        <script defer src="js/bootstrap-datepicker.min.js"></script>
+        <script defer src="js/isotope.pkgd.min.js"></script>
+        <script defer src="js/imagesloaded.pkgd.min.js"></script>
+        <script defer src="js/jquery.magnific-popup.min.js"></script>
+        <script defer src="js/jquery.odometer.min.js"></script>
+        <script defer src="js/jquery.easypiechart.min.js"></script>
+        <script defer src="js/jquery-ui.min.js"></script>
+        <script defer src="js/jquery.inview.min.js"></script>
+        <script defer src="js/jquery.appear.js"></script>
+        <script defer src="js/slick.min.js"></script>
+        <script defer src="js/wow.min.js"></script>
+        <script defer src="js/main.js"></script>
     </body>
 </html>
