@@ -1,0 +1,70 @@
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Temporary files
+*~
+*.swp
+*.swo
+.tmp/
+temp/
+
+# Editor directories and files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Cache
+.cache/
+*.cache
+
+# Backup files
+*.bak
+*.backup
+
+# System files
+desktop.ini
+Icon?
+
+# Development
+node_modules/
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# PERMITIR IMÁGENES Y VIDEOS - NO IGNORAR
+# !*.jpg
+# !*.jpeg
+# !*.png
+# !*.gif
+# !*.svg
+# !*.webp
+# !*.ico
+# !*.mp4
+# !*.avi
+# !*.mov
+# !*.wmv
+# !*.flv
+# !*.webm
+
+# Solo ignorar archivos comprimidos que NO sean de proyecto
+*.rar
+*.7z
+*.tar.gz

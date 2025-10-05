@@ -1,0 +1,58 @@
+User-agent: *
+Allow: /
+
+# Principales páginas de la escuela
+Allow: /index.html
+Allow: /escuela-primaria-prema.html
+Allow: /aportes-donaciones.html
+Allow: /plan-padrino.html
+Allow: /contacto.html
+Allow: /galeria.html
+Allow: /redes-sociales.html
+Allow: /programa-valores-humanos.html
+Allow: /recursos-educativos.html
+Allow: /construccion-segunda-etapa.html
+Allow: /escuela-complementaria.html
+Allow: /escuela-de-padres.html
+Allow: /nuestra-mision.html
+
+# Archivos permitidos
+Allow: /css/
+Allow: /js/
+Allow: /img/
+Allow: /fonts/
+Allow: /*.css
+Allow: /*.js
+Allow: /*.png
+Allow: /*.jpg
+Allow: /*.jpeg
+Allow: /*.gif
+Allow: /*.svg
+Allow: /*.pdf
+
+# Bloquear archivos innecesarios
+Disallow: /crowdpress/
+Disallow: /*.zip
+Disallow: /*.rar
+Disallow: /admin/
+Disallow: /private/
+Disallow: /tmp/
+Disallow: /temp/
+
+# Archivos temporales o duplicados originales (mantener solo los SEO optimizados)
+Disallow: /causes-details.html
+Disallow: /donation.html
+Disallow: /features.html
+Disallow: /contact.html
+Disallow: /gallery.html
+Disallow: /blog.html
+Disallow: /causes.html
+Disallow: /startup-causes-details.html
+Disallow: /portfolio-details.html
+Disallow: /blog-details.html
+
+# Sitemap
+Sitemap: https://escuelaprema.edu.co/sitemap.xml
+
+# Crawl-delay para ser amable con los servidores
+Crawl-delay: 1

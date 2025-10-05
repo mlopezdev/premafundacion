@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Página Principal -->
+  <url>
+    <loc>https://escuelaprema.edu.co/</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://escuelaprema.edu.co/img/logo/Logo Escuela.png</image:loc>
+      <image:title>Logo Escuela Prema</image:title>
+    </image:image>
+  </url>
+
+  <!-- Escuela Primaria Prema -->
+  <url>
+    <loc>https://escuelaprema.edu.co/escuela-primaria-prema.html</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Programa en Valores Humanos -->
+  <url>
+    <loc>https://escuelaprema.edu.co/programa-valores-humanos.html</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Aportes y Donaciones -->
+  <url>
+    <loc>https://escuelaprema.edu.co/aportes-donaciones.html</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Plan Padrino -->
+  <url>
+    <loc>https://escuelaprema.edu.co/plan-padrino.html</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Recursos Educativos -->
+  <url>
+    <loc>https://escuelaprema.edu.co/recursos-educativos.html</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Construcción Segunda Etapa -->
+  <url>
+    <loc>https://escuelaprema.edu.co/construccion-segunda-etapa.html</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Escuela Complementaria -->
+  <url>
+    <loc>https://escuelaprema.edu.co/escuela-complementaria.html</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Escuela de Padres -->
+  <url>
+    <loc>https://escuelaprema.edu.co/escuela-de-padres.html</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Galería -->
+  <url>
+    <loc>https://escuelaprema.edu.co/galeria.html</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Redes Sociales -->
+  <url>
+    <loc>https://escuelaprema.edu.co/redes-sociales.html</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Contacto -->
+  <url>
+    <loc>https://escuelaprema.edu.co/contacto.html</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Nuestra Misión -->
+  <url>
+    <loc>https://escuelaprema.edu.co/nuestra-mision.html</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>
